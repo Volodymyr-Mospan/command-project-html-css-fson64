@@ -1,1 +1,11 @@
-<
+.page-header__container {
+    display: flex;
+  justify-content: space-between;
+}
+
+.menu__list {
+    display: flex;
+    gap: 27px;
+    align-items: center;
+    justify-content: center;
+}
