@@ -1,0 +1,142 @@
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 34px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: 0;
+
+  color: var(--dark-text-color);
+  background-color: var(--accent-color);
+
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  & .icon-btn {
+    stroke: var(--dark-text-color);
+  }
+}
+
+.btn--read-more {
+  column-gap: 5px;
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+
+  &:focus {
+    background-color: var(--hover-color);
+    color: var(--light-text-color);
+    & .icon-btn {
+      stroke: var(--light-text-color);
+    }
+  }
+
+  &:disabled {
+    background-color: var(--disabled-color);
+  }
+}
+
+.btn--buy-now {
+  column-gap: 7px;
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+
+  &:focus {
+    background-color: var(--hover-color);
+    color: var(--light-text-color);
+    & .icon-btn {
+      stroke: var(--light-text-color);
+    }
+  }
+
+  &:disabled {
+    background-color: var(--disabled-color);
+  }
+}
+
+.btn--our-locations {
+  padding: 12px 34px 12px 38px;
+
+  column-gap: 11px;
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+
+  &:focus {
+    background-color: var(--hover-color);
+    color: var(--light-text-color);
+    & .icon-btn {
+      stroke: var(--light-text-color);
+    }
+  }
+
+  &:disabled {
+    background-color: var(--disabled-color);
+  }
+}
+
+.btn--products {
+  padding: 10px 32px;
+
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+
+  &:hover {
+    border-color: var(--hover-color);
+  }
+
+  &:focus {
+    border-color: var(--hover-color);
+    color: var(--light-text-color);
+  }
+
+  &:disabled {
+    border-color: var(--disabled-color);
+  }
+
+  @media screen and (max-width: 1119px) {
+    padding: 5px 10px;
+
+    font-size: 8px;
+    line-height: calc(10 / 8);
+
+    border-radius: 8px;
+  }
+}
+
+.btn--franchise {
+  padding: 10px 44px 10px 52px;
+
+  column-gap: 14px;
+
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+
+  &:hover {
+    border-color: var(--hover-color);
+  }
+
+  &:focus {
+    border-color: var(--hover-color);
+    color: var(--light-text-color);
+    & .icon-btn {
+      stroke: var(--light-text-color);
+    }
+  }
+
+  &:disabled {
+    border-color: var(--disabled-color);
+  }
+}
