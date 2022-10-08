@@ -1,0 +1,67 @@
+.section-hero{
+    position: relative;
+    background-color: #84A278;
+    padding-bottom: 65px;
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.name{
+    font-size: 38px;
+        line-height: 48px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-top: 45px;
+        padding: 0;
+}
+.right-text{
+    list-style: none;
+    text-align: right;
+}
+.name2{
+    text-align: right;
+    margin: 0;
+}
+.cafe{
+    margin: 0;
+    font-size: 46px;
+        line-height: 56px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+}
+.hero-title{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+}
+.hero__btn{
+    display: inline-flex;
+    gap: 12px;
+}
+.plate{
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+}
+.hero__img {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    left: 45%;
+    bottom: -100px;
+}
+.plate__text{
+    margin-left: 14px;
+}
+.bubble{
+    min-width: 480px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
