@@ -1,7 +1,11 @@
-<div class="backdrop is-open" data-modal>
+<div class="backdrop" data-modal>
   <div class="modal buy-now-modal">
-    <button class="modal-close-btn" type="button" data-modal-close>X</button>
-    <p class="modal__title">Buy now</p>
+    <button class="modal-close-btn" type="button" data-modal-close>
+      <svg class="modal-close-btn__icon" width="16" height="17">
+        <use href="./images/icon.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal__title modal__title--buy-nov">Buy now</p>
     <ul class="buy-now-modal__list">
       <li class="buy-now-modal__item">
         <label class="buy-now-modal__lable">
@@ -137,40 +141,64 @@
   </div>
 </div>
 
-<!-- <div class="backdrop" data-modal>
+<div class="backdrop" data-modal>
   <div class="modal product-modal">
     <button class="modal-close-btn" type="button" data-modal-close>
-      временно - закрыть
+      <svg class="modal-close-btn__icon" width="16" height="17">
+        <use href="./images/icon.svg#icon-close"></use>
+      </svg>
     </button>
-    <p class="modal__title">Chololate icecream</p>
-    <div>заглушка для картинки - заменится</div>
+    <p class="modal__title modal__title--product">Chololate<br />icecream</p>
+    <div class="product-modal__picture">
+      <picture>
+        <source
+          srcset="
+            ./images/modal-ingredients-ice-cream.webp    1x,
+            ./images/modal-ingredients-ice-cream@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/modal-ingredients-ice-cream.jpg    1x,
+            ./images/modal-ingredients-ice-cream@2x.jpg 2x
+          "
+        />
+        <img
+          src="./images/modal-ingredients-ice-cream.jpg"
+          alt="icecream-mobile"
+          class="product-modal__img"
+        />
+      </picture>
+    </div>
     <ul class="product-characteristics-list">
       <li class="product-characteristics-list__item">
         <div class="product-characteristics-list__block">
           <div class="product-characteristics-list__value">320</div>
-          kcal
+          <p class="product-characteristics-list__txt">kcal</p>
         </div>
       </li>
       <li class="product-characteristics-list__item">
         <div class="product-characteristics-list__block">
           <div class="product-characteristics-list__value">4g</div>
-          Protein...
+          <p class="product-characteristics-list__txt">Prote...</p>
         </div>
       </li>
       <li class="product-characteristics-list__item">
         <div class="product-characteristics-list__block">
           <div class="product-characteristics-list__value">8,2g</div>
-          Fats
+          <p class="product-characteristics-list__txt">Fats</p>
         </div>
       </li>
       <li class="product-characteristics-list__item">
         <div class="product-characteristics-list__block">
           <div class="product-characteristics-list__value">40,4g</div>
-          Carbs
+          <p class="product-characteristics-list__txt">Carbs</p>
         </div>
       </li>
     </ul>
     <div class="ingredients">
+      <p class="ingredients__title">Ingredients</p>
       <ul class="ingredients__list">
         <li class="ingredients__item">
           <div class="ingredients__content">
@@ -238,16 +266,20 @@
           placeholder="Comment"
         ></textarea>
       </label>
-      <button class="modal-btn-submit" type="submit">Submit</button>
     </form>
+    <button class="btn modal-btn" type="submit">Submit</button>
   </div>
 </div>
 
-<div class="backdrop" data-modal>
+<div class="backdrop is-open" data-modal>
   <div class="modal franchise-modal">
-    <button class="modal-close-btn" type="button" data-modal-close>X</button>
+    <button class="modal-close-btn" type="button" data-modal-close>
+      <svg class="modal-close-btn__icon" width="16" height="17">
+        <use href="./images/icon.svg#icon-close"></use>
+      </svg>
+    </button>
     <p class="modal__title">
-      Thank you for your interest in owning an Ice Cream shop
+      Thank you for your<br />interest in owning an<br />Ice Cream shop
     </p>
     <p class="franchise-modal__txt">
       Due to the overwhelming volume of franchise requests we are not accepting
@@ -293,7 +325,7 @@
           placeholder="Comment"
         ></textarea>
       </label>
-      <button class="modal-btn-submit" type="submit">Submit</button>
     </form>
+    <button class="btn modal-btn" type="submit">Submit</button>
   </div>
-</div> -->
+</div>
