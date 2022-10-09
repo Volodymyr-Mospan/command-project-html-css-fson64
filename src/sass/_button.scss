@@ -27,6 +27,12 @@
 
 .btn--read-more {
   column-gap: 5px;
+  margin-top: 20px;
+
+  @media screen and (min-width:768px) {
+    margin-top: 48px;
+  }
+
 
   &:hover {
     background-color: var(--hover-color);
