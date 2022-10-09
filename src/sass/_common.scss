@@ -12,7 +12,9 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+p {
   margin: 0;
 }
 
@@ -46,8 +48,8 @@ ul {
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 33px;
-    line-height: calc(37 / 33);
+    font-size: 30px;
+    line-height: calc(37 / 30);
     letter-spacing: 0.04em;
   }
 }
