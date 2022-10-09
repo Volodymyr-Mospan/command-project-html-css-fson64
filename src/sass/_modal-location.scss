@@ -1,4 +1,4 @@
-.modal-window {
+.modal-location {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17,23 +17,23 @@
   pointer-events: auto;
 }
 
-.modal-window__wraper {
+.modal-location__wraper {
   padding: 28px;
   text-align: center;
 }
 
-.modal-window__svg {
+.modal-location__svg {
   position: absolute;
 }
 
-.modal-window__title {
+.modal-location__title {
   color: var(--dark-text-color);
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
 }
 
-.modal-window__link {
+.modal-location__link {
   display: inline-block;
   text-decoration: none;
   font-family: 'Montserrat';
@@ -61,24 +61,24 @@
 }
 
 @media screen and (max-width: 767px) {
-  .modal-window {
+  .modal-location {
     width: 280px;
     height: 365px;
   }
-  .modal-window__title {
+  .modal-location__title {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
   }
 
-  .modal-window__svg {
+  .modal-location__svg {
     width: 16px;
     height: 16px;
     top: 8px;
     right: 8px;
   }
 
-  .modal-window__link {
+  .modal-location__link {
     margin-top: 24px;
     font-size: 12px;
     line-height: 15px;
@@ -86,25 +86,25 @@
 }
 
 @media screen and (min-width: 768px) {
-  .modal-window {
+  .modal-location {
     width: 568px;
     height: 458px;
   }
 
-  .modal-window__title {
+  .modal-location__title {
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 32px;
   }
 
-  .modal-window__svg {
+  .modal-location__svg {
     width: 20px;
     height: 20px;
     top: 20px;
     right: 20px;
   }
 
-  .modal-window__link {
+  .modal-location__link {
     margin-top: 32px;
     font-size: 14px;
     line-height: 17px;
