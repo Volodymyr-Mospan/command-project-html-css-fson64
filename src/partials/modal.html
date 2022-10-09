@@ -1,26 +1,106 @@
-<div class="backdrop is-hidden" data-modal>
-  <div class="buy-now-modal">
-    <button class="modal-close-btn" type="button" data-modal-close>
-      временно - закрыть
-    </button>
+<div class="backdrop is-open" data-modal>
+  <div class="modal buy-now-modal">
+    <button class="modal-close-btn" type="button" data-modal-close>X</button>
     <p class="modal__title">Buy now</p>
     <ul class="buy-now-modal__list">
       <li class="buy-now-modal__item">
-        <label>
-          <input type="radio" name="product" value="ice cream" />
-          ice cream
+        <label class="buy-now-modal__lable">
+          <input
+            class="buy-now-modal__radio--classik"
+            type="radio"
+            name="product"
+            value="ice cream"
+          />
+          <span class="buy-now-modal__radio buy-now-modal__radio--icecream">
+            <picture>
+              <source
+                srcset="
+                  ./images/modal-ice-cream.webp    1x,
+                  ./images/modal-ice-cream@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/modal-ice-cream.jpg    1x,
+                  ./images/modal-ice-cream@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/modal-ice-cream.jpg"
+                alt="icecream"
+                class="buy-now-modal__img buy-now-modal__img--icecream"
+              />
+            </picture>
+            <p class="buy-now-modal__txt">ice cream</p>
+          </span>
         </label>
       </li>
       <li class="buy-now-modal__item">
-        <label>
-          <input type="radio" name="product" value="ice coffee" checked />
-          ice coffee
+        <label class="buy-now-modal__lable">
+          <input
+            class="buy-now-modal__radio--classik"
+            type="radio"
+            name="product"
+            value="ice coffee"
+            checked
+          />
+          <span class="buy-now-modal__radio buy-now-modal__radio--icecofee">
+            <picture>
+              <source
+                srcset="
+                  ./images/modal-icecofee.webp    1x,
+                  ./images/modal-icecofee@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/modal-icecofee.jpg    1x,
+                  ./images/modal-icecofee@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/modal-icecofee.jpg"
+                alt="icecream-mobile"
+                class="buy-now-modal__img buy-now-modal__img--icecofee"
+              />
+            </picture>
+            <p class="buy-now-modal__txt">ice cofee</p>
+          </span>
         </label>
       </li>
       <li class="buy-now-modal__item">
-        <label>
-          <input type="radio" name="product" value="milkshake" />
-          milkshake
+        <label class="buy-now-modal__lable">
+          <input
+            class="buy-now-modal__radio--classik"
+            type="radio"
+            name="product"
+            value="milkshake"
+          />
+          <span class="buy-now-modal__radio buy-now-modal__radio--milkshake">
+            <picture>
+              <source
+                srcset="
+                  ./images/modal-milkshake.webp    1x,
+                  ./images/modal-milkshake@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/modal-milkshake.jpg    1x,
+                  ./images/modal-milkshake@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/modal-milkshake.jpg"
+                alt="icecream-mobile"
+                class="buy-now-modal__img buy-now-modal__img--milkshake"
+              />
+            </picture>
+            <p class="buy-now-modal__txt">milkshake</p>
+          </span>
         </label>
       </li>
     </ul>
@@ -52,13 +132,13 @@
           placeholder="Comment"
         ></textarea>
       </label>
-      <button class="modal-btn-submit" type="submit">Submit</button>
     </form>
+    <button class="btn modal-btn" type="submit">Submit</button>
   </div>
 </div>
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="product-modal">
+<!-- <div class="backdrop" data-modal>
+  <div class="modal product-modal">
     <button class="modal-close-btn" type="button" data-modal-close>
       временно - закрыть
     </button>
@@ -163,11 +243,9 @@
   </div>
 </div>
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="franchise-modal">
-    <button class="modal-close-btn" type="button" data-modal-close>
-      временно - закрыть
-    </button>
+<div class="backdrop" data-modal>
+  <div class="modal franchise-modal">
+    <button class="modal-close-btn" type="button" data-modal-close>X</button>
     <p class="modal__title">
       Thank you for your interest in owning an Ice Cream shop
     </p>
@@ -218,4 +296,4 @@
       <button class="modal-btn-submit" type="submit">Submit</button>
     </form>
   </div>
-</div>
+</div> -->
