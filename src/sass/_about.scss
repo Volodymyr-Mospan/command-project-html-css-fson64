@@ -1,20 +1,21 @@
 .section__title--about{
-    margin-bottom: 32px;
+    margin-bottom: 65px;
+
 @media screen and (max-width:767px) {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
+}
 @media screen and (min-width:768px){
-    margin-bottom: 72px;
+    margin-bottom: 106px;
 }
 @media screen and (min-width:1200px) {
-    margin-bottom: 82px;
-}
-
+    margin-bottom: 130px;
 }
 }
 
-.section__img{
+
+.section-about__img{
     display: block;
     max-width: 100%;
     height: auto;
@@ -24,6 +25,7 @@
 
     @media screen and (min-width:768px) {
         border-radius: 200px ;
+        box-shadow: 0px -26px 0px rgba(248, 210, 78, 0.7);
     }
         @media screen and (min-width:1200px) {
             border-radius: 300px;
@@ -31,11 +33,11 @@
         }
 }
 
-.section__box {
+.section-about__holder {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+   
 
     @media screen and (min-width:768px){
         flex-direction: row;
@@ -44,45 +46,54 @@
     }
 
          @media screen and (min-width:1200px){
-            column-gap: 100px;
+            column-gap: 108px;
          }
 }
 
-.section__container{
+.section-about__container{
     display: flex;
     flex-direction: column;
     align-items: center;
 
     @media screen and (min-width:768px) {
         align-items: flex-start;
+        margin-top: -19px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-top: 51px;
     }
     
 }
 
-.section__text {
+.section-about__text {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     max-width: 220px;
 
     font-size: 12px;
+   
 @media screen and (max-width:767px) {
     &--hidden {
         display: none;
     }
+         &:first-child {
+             margin-bottom: 4px;
+         }
 }
 
 @media screen and (min-width:768px){
     max-width: 336px;
     margin-bottom: 8px;
     text-align: left;
-
-    .section__text:last-child{
+    &:nth-child(3){
         margin-bottom: 0;
     }
 }
  @media screen and (min-width:1200px) {
      max-width: 463px;
-     font-size: 16px;
+     font-size: 14px;
+     line-height: 1.94;
  }
 }
