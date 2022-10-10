@@ -100,6 +100,10 @@
   padding-bottom: 20px;
   cursor: pointer;
 
+  .buy-now-modal__radio--classik:checked + & {
+    background-color: var(--accent-color);
+  }
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
@@ -166,14 +170,24 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.4;
+  &:required:invalid:not(:placeholder-shown) {
+    background-color: tomato;
+  }
+  &:required:valid:not(:placeholder-shown) {
+    background-color: #84a178;
+  }
 }
 .comment__txt {
   margin-bottom: 25px;
   height: 65px;
   resize: none;
 }
-.btn.modal-btn:hover,
-.btn.modal-btn:focus {
+.modal-btn-block {
+  display: flex;
+  justify-content: center;
+}
+.modal-btn:hover,
+.modal-btn:focus {
   background-color: var(--hover-color);
   color: var(--light-text-color);
 }
@@ -265,6 +279,11 @@
   margin-bottom: 24px;
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
     width: 568px;
