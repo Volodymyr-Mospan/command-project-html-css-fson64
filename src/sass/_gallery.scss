@@ -1,0 +1,17 @@
+.slider {
+  max-width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.slider-line {
+  width: 1013px;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+
+.slider-line img {
+  border-radius: 24px;
+}
