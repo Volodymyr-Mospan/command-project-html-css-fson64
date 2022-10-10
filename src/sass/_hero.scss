@@ -19,18 +19,34 @@ background-size: contain;
     margin-top: 61px;
 }
 .hero__btn{
+    align-items: center;
     margin-top: 32px;
     margin-bottom: 42px;
     display: flex;
-    gap: 12px;
+    gap: 8px;
+}
+.hero__link{
+    text-decoration: none;
 }
 .btn--made{
+    font-size: 8px;
+    line-height: 10px;
     background-color: transparent;
     outline: none;
     border: none;
     text-decoration: underline;
     padding: 12px 22px;
     color: var(--accent-color);
+    cursor: pointer;
+}
+.btn--made:hover{
+    color: var(--hover-color);
+}
+.btn--made:focus{
+    color: var(--light-text-col);
+}
+.btn--made:disabled{
+    color: var(--disabled-color);
 }
 .hero__list{
     display: none;
@@ -104,6 +120,23 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     display: flex;
     margin-top: 10px;
     align-items: center;
+}
+.plate__info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.plate__btn{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+.plate__svg{
+    display: block;
+    fill: #fcfcfc;
+    line-height: 0;
+    width:40px ;
+    height: 15px;
+
 }
 .plate__text{
     width: 135px;
@@ -181,8 +214,12 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         line-height: 1.35;
     }
     .plate{
-        margin-top: 125px;
+        margin-top: 130px;
     }
+     .plate__info {
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
     .plate__text{
         width: 200px;
         font-size: 14px;
@@ -192,9 +229,14 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         left: 270px;
         bottom: -50px;
     }
+    .btn--made{
+        font-size: 14px;
+            line-height: 17px;
+    }
     .hero__btn {
         top: 170px;
         left: 16px;
+        gap: 12px;
     }}
 
 
