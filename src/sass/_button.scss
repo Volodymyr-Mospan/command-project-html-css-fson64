@@ -29,10 +29,9 @@
   column-gap: 5px;
   margin-top: 20px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-top: 48px;
   }
-
 
   &:hover {
     background-color: var(--hover-color);
@@ -112,7 +111,7 @@
     border-color: var(--disabled-color);
   }
 
-  @media screen and (max-width: 1119px) {
+  @media screen and (max-width: 1199px) {
     padding: 5px 10px;
 
     font-size: 8px;
