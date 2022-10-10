@@ -1,0 +1,208 @@
+.fons-section {
+    min-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image:
+            url(../images/fons-ice-cream-tablet.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 1);}
+
+@media screen and (min-width: 1200px) {
+    .fons-section {
+        max-width: 1600px;
+        background-image:
+            url(../images/fons-ice-cream-desctop.jpg);
+    }
+}
+.section__lable--dark {
+    margin-top: 0;
+    color: var(--dark-text-color);
+}
+.section__title--dark {
+    margin-bottom: 40px;
+    color: var(--dark-text-color);
+
+ @media screen and (min-width: 768px){
+    margin-bottom: 80px;
+ }  
+ 
+ @media screen and (min-width: 1200px) {
+     margin-bottom: 120px;
+ }
+}
+
+.product__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+
+@media screen and (max-width: 767px){
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .product__item {
+        margin-bottom: 60px;
+    }
+}
+
+.product__item {
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 0 40px 20px;
+border-radius: 24px;
+}
+@media screen and (min-width: 768px) {
+    .product__item {
+flex-basis: calc((100% - 32px)/3);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product__item {
+        flex-basis: calc((100% - 64px)/3);
+    }
+}
+
+.product__item::before {
+    content: "";
+    display: block;
+    height: 211px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 250px;
+    
+}
+.product__item:nth-child(1)::before {
+    background-image: 
+         url(../images/test2.jpg);
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    background-color: #AEC6A5;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .product__item:nth-child(1)::before {
+        background-image: url(../images/ice-cream-mobile@2x.jpg)
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .product__item:nth-child(1)::before {
+        background-image: url(../images/ice-cream-tablet@2x.jpg);
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .product__item:nth-child(1)::before {
+        background-image: url(../images/ice-cream@2x.jpg);
+    }
+}
+
+.product__item:nth-child(2)::before{
+    background-image: 
+        url(../images/ice-coffe-mobile.jpg);
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    border-radius: 250px;
+
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .product__item:nth-child(2)::before {
+        background-image: url(../images/ice-coffe-mobile@2x.jpg);
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .product__item:nth-child(2)::before{
+        background-image: url(../images/ice-coffe-tablet@2x.jpg);
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .product__item:nth-child(2)::before {
+        background-image: url(../images/ice-coffe-tablet@2x.jpg);
+    }
+}
+
+.product__item:nth-child(3)::before {
+    background-image: 
+         url(../images/milkshakes-mobile.jpg);
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .product__item:nth-child(3)::before {
+        background-image: url(../images/milkshakes-mobile@2x.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .product__item:nth-child(3)::before {
+        background-image: url(../images/ice-coffe-tablet@2x.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .product__item:nth-child(3)::before {
+        background-image: url(../images/milkshakes@2x.jpg);
+    }
+}
+.product__item:nth-child(1) {
+background-color: #AEC6A5;
+}
+.product__item:nth-child(2) {
+background-color:#EFD478;
+}
+
+.product__item:nth-child(3) {
+background-color: #D6936D;
+}
+.product__description {
+    color: var(--dark-text-color);
+    font-size: 14px;
+@media screen and (min-width: 1200px){
+    font-size: 16px;
+}
+}
+.product__name{
+    font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        color: var(--dark-text-color);
+        margin-top: 20px;
+@media screen and (min-width: 768px) {
+    font-size: 22px;
+}
+@media screen and (min-width: 1200px){
+    font-size: 30px;
+    margin-top: 32px;
+}
+}
+.btn-arrow {
+    display: inline-flex;
+    align-items: center;
+    min-width: auto;
+    border: none;
+
+}
+
+.icon-btn {
+    align-items: center;
+}
