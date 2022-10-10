@@ -22,12 +22,21 @@
             </a>
         </div>
         <div class="plate">
-            <img src="./images/icecream-plate.png" alt="Тарілка морозива">
+            <picture>
+                <source srcset="./images/icecream-plate.png 1x" media="(min-width: 1200px)" />
+                <source srcset="./images/icecream-plate-tablet.png 1x" media="(min-width: 768px)" />
+                 <img src="./images/icecream-plate.png" alt="Тарілка морозива">
+            </picture>
             <div class="plate__text">
                 <p> Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit,
                     sed do eiusmod tempor
                     incididunt ut labore et
+                    <button class="plate__btn">
+                        <svg class="plate__svg">
+                            <use href="./images/icon.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
             </div>
         </div>
         <div>
