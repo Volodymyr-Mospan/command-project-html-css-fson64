@@ -1,42 +1,41 @@
-const images = document.querySelectorAll('.slider .slider-line img');
-const sliderLine = document.querySelector('.slider .slider-line');
-let count = 0;
-let width;
+(() => {
+  const mobileMenu = document.querySelector('.js-menu-container');
+  const openMenuBtn = document.querySelector('.js-open-menu');
+  const closeMenuBtn = document.querySelector('.js-close-menu');
 
-function init() {
-  console.log('resize');
-  width = document.querySelector('.slider').offsetWidth;
-  sliderLine.style.width = width * images.length + 'px';
-  images.forEach(item => {
-    item.style.width = width + 'px';
-    item.style.height = 'auto';
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.toggle('is-open');
+
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
+  };
+
+  openMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
+
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove('is-open');
+    openMenuBtn.setAttribute('aria-expanded', false);
+    bodyScrollLock.enableBodyScroll(document.body);
   });
-  rollSlider();
-}
 
-init();
-window.addEventListener('resize', init);
+  const refs = {
+    openModalLocationBtn: document.querySelector('[data-modalLocation-open]'),
+    closeModalLocationBtn: document.querySelector('[data-modalLocation-close]'),
+    modalLocation: document.querySelector('[data-modalLocation]'),
+  };
 
-let next = true;
+  refs.openModalLocationBtn.addEventListener('click', toggleModal);
+  refs.closeModalLocationBtn.addEventListener('click', toggleModal);
 
-setInterval(function () {
-  if (next) {
-    count++;
-    if (count >= images.length) {
-      next = false;
-      count--;
-    }
-  } else {
-    count--;
-    if (count < 0) {
-      next = true;
-      count++;
-    }
+  function toggleModal() {
+    refs.modalLocation.classList.toggle('is-open');
   }
-
-  rollSlider();
-}, 2000); // update about every 2 second
-
-function rollSlider() {
-  sliderLine.style.transform = 'translate(-' + count * width + 'px)';
-}
+})();
