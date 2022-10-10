@@ -39,3 +39,31 @@
     refs.modalLocation.classList.toggle('is-open');
   }
 })();
+
+const refs = {
+  openModalBuynowBtn: document.querySelector('[data-modalBuynow-open]'),
+  closeModalBuynowBtn: document.querySelector('[data-modalBuynow-close]'),
+  modalBuynow: document.querySelector('[data-modalBuynow]'),
+};
+
+refs.openModalBuynowBtn.addEventListener('click', toggleModal);
+refs.closeModalBuynowBtn.addEventListener('click', toggleModal);
+
+function toggleModal() {
+  refs.modalBuynow.classList.toggle('is-open');
+}
+
+{
+  const refs = {
+    openModalproductsBtn: document.querySelector('[data-modalproducts-open]'),
+    closeModalproductsBtn: document.querySelector('[data-modalproducts-close]'),
+    modalproducts: document.querySelector('[data-modalproducts]'),
+  };
+
+  refs.openModalproductsBtn.addEventListener('click', toggleModal);
+  refs.closeModalproductsBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modalproducts.classList.toggle('is-open');
+  }
+}
