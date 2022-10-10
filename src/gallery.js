@@ -35,7 +35,7 @@ setInterval(function () {
   }
 
   rollSlider();
-}, 2000); // update about every 2 second
+}, 4000); // update about every 4 second
 
 function rollSlider() {
   sliderLine.style.transform = 'translate(-' + count * width + 'px)';
