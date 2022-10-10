@@ -1,0 +1,250 @@
+.page-header__container {
+    display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.page-header__logo-link {
+  position: absolute;
+  top: 12px;
+  width: 44px;
+}
+
+.open-mobile-menu-btn {
+  background-color: transparent;
+  border: 0;
+  stroke: var(--light-text-color);
+  cursor: pointer;
+  line-height: 0;
+  transition-property: stroke;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+      & .open-mobile-menu-btn__icon {
+        stroke: var(--accent-color);
+      }
+    }
+}
+
+.open-mobile-menu-btn__icon {
+    fill: var(--light-text-color);
+    
+      &:hover,
+      &:focus {
+        fill: var(--accent-color);
+      }
+}
+
+.page-header__buttons {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+// MOBILE MENU
+
+ .mobile-menu {
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: 100;
+transform: translateX(100%);
+    background-color: var(--primary-bg-color);
+    transition-property: transform;
+      transition-duration: 500ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+     .mobile-menu.is-open {
+      transform: translateX(0);
+     }
+
+ .mobile-menu__logo-link {
+  position: absolute;
+  top: 12px;
+  left: 31px;
+}
+
+ .mobile-menu__logo-img {
+  height: 48px;
+  width: 44px;}
+
+.mobile-menu__close-btn {
+  background-color: transparent;
+  border: 0;
+}
+
+.mobile-menu__close-btn-icon {
+  stroke: var(--light-text-color);
+}
+
+.mobile-menu__container {
+  position: relative;
+  padding-top: 100px;
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  top: 16px;
+  right: 20px;
+  line-height: 0;
+  stroke: var(--light-text-color);
+
+  &:hover,
+  &:focus {
+    & .mobile-menu__close-btn-icon {
+      stroke: var(--accent-color);
+    }
+  }
+}
+
+.mobile-menu__close-btn-icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 32px;
+  height: 32px;
+  fill: var(--light-text-color);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+  gap: 32px;
+  margin-bottom: 111px;
+  }
+
+
+.mobile-menu__link {
+font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.22;
+  color: var(--light-text-color);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--dark-text-color)
+  }
+
+}
+
+.mobile-menu__buy--btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 152px;
+}
+
+// 00-768PX MOBILE
+
+@media screen and (max-width: 767px) 
+{
+  .menu {
+    display: none;
+  }
+
+  .page-header__btn--buy-now {
+    display: none;
+  }
+}
+
+// 768PX-1199PX TABLET
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .menu {
+      display: none;
+    }
+
+    .page-header__logo-link {
+      position: absolute;
+      top: 20px;
+      left: 32px;
+    }
+
+    .mobile-menu__logo-link {
+          position: absolute;
+      top: 20px;
+      left: 32px;
+    }
+
+.page-header__container {
+  padding-top: 24px;
+}
+
+.mobile-menu__buy--btn {
+  display: none;
+}
+
+.mobile-menu__close-btn {
+  top: 32px;
+  right: 32px;
+}
+
+.mobile-menu__list {
+  gap: 40px;
+}
+
+    
+}
+
+// 1200PX +++ DESKTOP
+
+@media screen and (min-width: 1200px) {
+
+.menu__list {
+    display: flex;
+    gap: 27px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__link {
+  font-family: 'Montserrat';
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--light-text-color);
+  text-decoration: none;
+  transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.page-header__container {
+padding-top: 40px;
+}
+
+.page-header__logo-link {
+  position: absolute;
+  top: 8px;
+}
+
+.open-mobile-menu-btn {
+  display: none;
+}
+}
