@@ -99,29 +99,46 @@
   padding-top: 96px;
   padding-bottom: 20px;
   cursor: pointer;
-
-  .buy-now-modal__radio--classik:checked + & {
-    background-color: var(--accent-color);
-  }
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-  }
 }
 .buy-now-modal__radio--icecream {
   border: 2px solid #96af8c;
   border-radius: 16px;
+  .buy-now-modal__radio--classik:checked + & {
+    background-color: #96af8c;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #96af8c;
+  }
 }
 .buy-now-modal__radio--icecofee {
   border: 2px solid #efd478;
   background-color: transparent;
   border-radius: 16px;
+
+  .buy-now-modal__radio--classik:checked + & {
+    background-color: #efd478;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #efd478;
+  }
 }
 .buy-now-modal__radio--milkshake {
   border: 2px solid #d6936d;
   background-color: transparent;
   border-radius: 16px;
+
+  .buy-now-modal__radio--classik:checked + & {
+    background-color: #d6936d;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #d6936d;
+  }
 }
 .buy-now-modal__img {
   position: absolute;
@@ -279,11 +296,11 @@
   margin-bottom: 24px;
 }
 
-@media screen and (max-width: 479px) {
-  .modal {
-    width: 100%;
-  }
-}
+// @media screen and (max-width: 479px) {
+//   .modal {
+//     width: 100%;
+//   }
+// }
 @media screen and (min-width: 768px) {
   .modal {
     width: 568px;
