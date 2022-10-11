@@ -22,19 +22,30 @@
             </a>
         </div>
         <div class="plate">
-            <img src="./images/icecream-plate.png" alt="Тарілка морозива">
+            <picture>
+                <source srcset="./images/icecream-plate.png 1x, ./images/icecream-plate@2x.png 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/icecream-plate-tablet.png 1x, ./images/icecream-plate-tablet@2x.png 2x" media="(min-width: 768px)" />
+                 <img src="./images/icecream-plate.png" alt="Тарілка морозива">
+            </picture>
             <div class="plate__text">
                 <p> Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit,
                     sed do eiusmod tempor
                     incididunt ut labore et
+                    <div>
+                        <button class="plate__btn">
+                                <svg class="plate__svg">
+                                    <use href="./images/icon.svg#icon-arrow"></use>
+                                </svg>
+                        </button>
+                    </div>
             </div>
         </div>
         <div>
             <picture class="hero__img">
-                <source srcset="./images/icecream.png 1x" media="(min-width: 1200px)" />
-                <source srcset="./images/icecream-tablet.png 1x" media="(min-width: 768px)" />
-                <source srcset="./images/icecream-mobile.png 1x" media="(max-width: 767px)" />
+                <source srcset="./images/icecream.png 1x, ./images/icecream@2x.png 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/icecream-tablet.png 1x, ./images/icecream-tablet@2x.png 2x" media="(min-width: 768px)" />
+                <source srcset="./images/icecream-mobile.png 1x, ./images/icecream-mobile@2x.png 2x" media="(max-width: 767px)" />
                 <img class="hero__img" src="./images/icecream.png" alt="Морозиво">
             </picture>
         </div>

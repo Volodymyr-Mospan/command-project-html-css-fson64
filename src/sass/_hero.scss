@@ -19,8 +19,7 @@
   margin-top: 61px;
 }
 .hero__btn {
-  position: relative;
-  z-index: 2;
+  position: absolute;
   align-items: center;
   margin-top: 32px;
   margin-bottom: 42px;
@@ -60,6 +59,14 @@
   position: absolute;
   left: 43px;
   bottom: -26px;
+  z-index: -1;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero--conitaner {
+    background-image: url(../images/bubble-mobile@2x.png);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -73,8 +80,7 @@
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero--conitaner {
-      background-image: linear-gradient(#2f303a66, #2f303a66),
-        url('../images/bubble-tablet.png');
+      background-image: url('../images/bubble-tablet@2x.png');
     }
   }
   .hero__img {
@@ -119,30 +125,26 @@
   }
   .plate {
     display: flex;
-    margin-top: 10px;
+    margin-top: 65px;
     align-items: center;
   }
-  .plate__info {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
   .plate__btn {
-    padding: 0;
+    padding: 0px;
     background-color: transparent;
     border: none;
+    margin-top: 20px;
+    cursor: pointer;
   }
+
   .plate__svg {
-    display: block;
     fill: #fcfcfc;
-    line-height: 0;
     width: 40px;
-    height: 15px;
+    height: 20px;
   }
   .plate__text {
+    margin-top: 20px;
     width: 135px;
-    margin-left: 14px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-left: 33px;
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 400;
@@ -156,7 +158,7 @@
     position: absolute;
     margin: 0;
     left: 32px;
-    top: 80px;
+    top: 100px;
   }
   .hero__title {
     font-family: Seymour One;
@@ -202,7 +204,7 @@
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero--conitaner {
-      background-image: url('../images/bubble.png');
+      background-image: url('../images/bubble@2x.png');
     }
   }
   .hero__title {
@@ -220,11 +222,13 @@
   .plate {
     margin-top: 130px;
   }
-  .plate__info {
+  .plate__btn {
     margin-top: 32px;
-    margin-bottom: 32px;
   }
+
   .plate__text {
+    margin-top: 32px;
+    margin-left: 14px;
     width: 200px;
     font-size: 14px;
     line-height: 1.42;
@@ -232,6 +236,7 @@
   .hero__img {
     left: 270px;
     bottom: -50px;
+    z-index: 0;
   }
   .btn--made {
     font-size: 14px;
