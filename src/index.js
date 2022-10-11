@@ -25,19 +25,6 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
-
-  const refs = {
-    openModalLocationBtn: document.querySelector('[data-modalLocation-open]'),
-    closeModalLocationBtn: document.querySelector('[data-modalLocation-close]'),
-    modalLocation: document.querySelector('[data-modalLocation]'),
-  };
-
-  refs.openModalLocationBtn.addEventListener('click', toggleModal);
-  refs.closeModalLocationBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modalLocation.classList.toggle('is-open');
-  }
 })();
 
 const refs = {
@@ -65,6 +52,53 @@ function toggleModal() {
 
   function toggleModal() {
     refs.modalproducts.classList.toggle('is-open');
+  }
+}
+
+{
+  const refs = {
+    openModalvideoBtn: document.querySelector('[data-modalvideo-open]'),
+    closeModalvideoBtn: document.querySelector('[data-modalvideo-close]'),
+    modalvideo: document.querySelector('[data-modalvideo]'),
+  };
+
+  refs.openModalvideoBtn.addEventListener('click', toggleModal);
+  refs.closeModalvideoBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modalvideo.classList.toggle('is-open');
+  }
+}
+
+{
+  const refs = {
+    openModalLocationBtn: document.querySelector('[data-modalLocation-open]'),
+    closeModalLocationBtn: document.querySelector('[data-modalLocation-close]'),
+    modalLocation: document.querySelector('[data-modalLocation]'),
+  };
+
+  refs.openModalLocationBtn.addEventListener('click', toggleModal);
+  refs.closeModalLocationBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modalLocation.classList.toggle('is-open');
+  }
+}
+
+{
+  const refs = {
+    openModalfranchiseBtn: document.querySelector('[data-modalfranchise-open]'),
+    closeModalfranchiseBtn: document.querySelector(
+      '[data-modalfranchise-close]'
+    ),
+    modalfranchise: document.querySelector('[data-modalfranchise]'),
+  };
+
+  refs.openModalfranchiseBtn.addEventListener('click', toggleModal);
+  refs.closeModalfranchiseBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modalfranchise.classList.toggle('is-open');
   }
 }
 
