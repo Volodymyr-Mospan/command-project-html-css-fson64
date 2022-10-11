@@ -1,34 +1,30 @@
 .fons-section {
-    min-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image:
-        url(../images/fons-ice-cream-tablet.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(255, 255, 255, 1);
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/fons-ice-cream-tablet.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 1);
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
-screen and (min-resolution: 192dpi) and (max-width: 1199px),
-screen and (min-resolution: 2dppx) and (max-width: 1199px) {
-    .fons-section {
-        background-image: url(../images/fons-tablet@2x.jpg);
-    }
+  screen and (min-resolution: 192dpi) and (max-width: 1199px),
+  screen and (min-resolution: 2dppx) and (max-width: 1199px) {
+  .fons-section {
+    background-image: url(../images/fons-tablet@2x.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
-    .fons-section {
-        max-width: 1600px;
-        background-image:
-            url(../images/fons-ice-cream-desctop.jpg);
-    }
+  .fons-section {
+    max-width: 1600px;
+    background-image: url(../images/fons-ice-cream-desctop.jpg);
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-screen and (min-resolution: 192dpi) and (min-width: 1200px),
-screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    .fons-section {
-        background-image: url(../images/Fons-desctop@2x.jpg);
-    }
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .fons-section {
+    background-image: url(../images/fons-desctop@2x.jpg);
+  }
 }
-
-
