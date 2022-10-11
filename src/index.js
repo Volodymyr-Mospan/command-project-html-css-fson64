@@ -67,3 +67,32 @@ function toggleModal() {
     refs.modalproducts.classList.toggle('is-open');
   }
 }
+
+(() => {
+  const mobileModal = document.querySelector('.js-modal-container');
+  const openModalBtn = document.querySelector('.js-open-modal');
+  const closModalBtn = document.querySelector('.js-close-modal');
+
+  const toggleMenu = () => {
+    const isModalOpen =
+      openModalBtn.getAttribute('aria-expanded') === 'true' || false;
+    openModalBtn.setAttribute('aria-expanded', !isModalOpen);
+    mobileModal.classList.toggle('is-open');
+
+    const scrollLockMethod = !isModalOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
+  };
+
+  openModalBtn.addEventListener('click', toggleMenu);
+  closeModalBtn.addEventListener('click', toggleMenu);
+
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove('is-open');
+    openMenuBtn.setAttribute('aria-expanded', false);
+    bodyScrollLock.enableBodyScroll(document.body);
+  });
+})();
