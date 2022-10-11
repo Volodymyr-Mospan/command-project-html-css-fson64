@@ -1,14 +1,20 @@
 .modal-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #ffffff;
+  width: 280px;
+  max-height: 100%;
   transform: translate(-50%, -50%);
-  border: 2px solid var(--accent-color);
+  background-color: var(--light-text-color);
   border-radius: 10px;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  border: 2px solid #f8d24e;
+  color: var(--dark-text-color);
+  padding: 28px;
+  text-align: center;
 }
 
 .is-open {
@@ -17,12 +23,7 @@
   pointer-events: auto;
 }
 
-.modal-location__wraper {
-  padding: 28px;
-  text-align: center;
-}
-
-.modal-location__svg {
+.modal-close-btn {
   position: absolute;
 }
 
@@ -71,11 +72,14 @@
     margin-bottom: 20px;
   }
 
+  .modal-close-btn {
+    top: 8px;
+    right: 8px;
+  }
+
   .modal-location__svg {
     width: 16px;
     height: 16px;
-    top: 8px;
-    right: 8px;
   }
 
   .modal-location__link {
@@ -102,11 +106,14 @@
     margin-bottom: 32px;
   }
 
+  .modal-close-btn {
+    top: 20px;
+    right: 20px;
+  }
+
   .modal-location__svg {
     width: 20px;
     height: 20px;
-    top: 20px;
-    right: 20px;
   }
 
   .modal-location__link {
