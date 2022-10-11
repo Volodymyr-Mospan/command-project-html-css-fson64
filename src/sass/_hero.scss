@@ -130,18 +130,17 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     align-items: center;
 }
 .plate__btn{
-    padding: 0;
+    padding: 0px;
     background-color: transparent;
     border: none;
     margin-top: 20px;
+    cursor: pointer;
 }
-.plate__svg{
-    display: block;
-    fill: #fcfcfc;
-    line-height: 0;
-    width:40px ;
-    height: 15px;
 
+.plate__svg{
+    fill: #fcfcfc;
+    width: 40px;
+    height: 20px;
 }
 .plate__text{
     margin-top: 20px;
