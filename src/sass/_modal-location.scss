@@ -23,7 +23,7 @@
   pointer-events: auto;
 }
 
-.modal-location__svg {
+.modal-close-btn {
   position: absolute;
 }
 
@@ -72,11 +72,14 @@
     margin-bottom: 20px;
   }
 
+  .modal-close-btn {
+    top: 8px;
+    right: 8px;
+  }
+
   .modal-location__svg {
     width: 16px;
     height: 16px;
-    top: 8px;
-    right: 8px;
   }
 
   .modal-location__link {
@@ -103,11 +106,14 @@
     margin-bottom: 32px;
   }
 
+  .modal-close-btn {
+    top: 20px;
+    right: 20px;
+  }
+
   .modal-location__svg {
     width: 20px;
     height: 20px;
-    top: 20px;
-    right: 20px;
   }
 
   .modal-location__link {
