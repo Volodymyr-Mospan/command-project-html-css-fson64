@@ -1,0 +1,144 @@
+.customer-review {
+    background-color: #F5F5F5;
+
+
+    @media screen and (max-width: 767px) {
+        background-image: url(../images/customer/mobile/frame-480.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/customer/mobile/frame-480@2x.jpg);
+        }
+
+    }
+
+    @media screen and(max-width: 1199px) {
+        background-image: url(../images/customer/tablet/frame-768.jpg);
+        height: 1228px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/customer/tablet/frame-768@2x.jpg);
+        }
+    }
+
+    @media screen and(min-width: 1200px) {
+        background-image: url(../images/customer/desctop/frame-1x.jpg);
+        height: 1118px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/customer/desctop/frame-2x.jpg);
+        }
+    }
+}
+
+.customer__subtitle {
+    @media screen and (max-width: 767px) {
+        // width: 280px;
+        height: 256.06px;
+        left: 20px;
+        top: 4297.45px;
+
+        background: #84A178;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 34px;
+        padding-bottom: 34px;
+        padding-left: 39px;
+        padding-right: 39px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    @media screen and(min-width:768px) {
+        width: 705px;
+        height: 138px;
+        left: 32px;
+        top: 2679px;
+
+        background: #84A178;
+        border-radius: 24px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    @media screen and(min-width:1200px) {
+
+
+        width: 968px;
+        height: 138px;
+
+        background: #84A178;
+        border-radius: 24px;
+        margin-right: 116px;
+        margin-left: 116px;
+        // padding-top: 39px;
+        padding-left: 109px;
+        padding-right: 109px;
+    }
+}
+
+.customer__text {
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    margin-top: 32px;
+    text-align: center;
+
+    color: #131313;
+
+    @media screen and(max-width:480px) {
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 186%;
+        margin-top: 30px;
+        text-align: center;
+        margin-right: auto;
+
+        color: #131313;
+    }
+}
+
+.customer__image__review {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+    width: 85px;
+    height: 85px;
+    background: #6E6E6E;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before {
+    width: 12px;
+    height: 12px;
+    color: #D9D9D9;
+
+
+}
+
+.slick-dots li button:before {
+    width: 12px;
+    height: 12px;
+
+    &:hover,
+    &:focus {
+        color: #84A178;
+    }
+
+}
