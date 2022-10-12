@@ -70,17 +70,17 @@
   top: calc(-25% - 20px);
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 3;
   @media screen and (min-width: 1200px) {
     width: 300px;
     height: 300px;
-    top: calc(-30% - 20px);
+    top: calc(-25% - 20px);
       left: 50%;
       transform: translateX(-50%);
   }
   }
 
-.product__item:nth-child(1)::before {
+  .product__item:nth-child(1)::before {
   background-image: url(../images/ice-cream-mobile.jpg);
   box-shadow: 0px 15px rgba(10, 136, 23, 0.25);
   background-color: #aec6a5;
@@ -235,16 +235,17 @@
   margin-top: auto;
   margin-bottom: 20px;
   padding: 0;
+  transition: transform var(--transition-duration-timing-func);
 
   @media screen and (min-width: 1200px){
     margin-bottom: 60px;
   }
 }
 
-.icon-btn:hover {
+.product__icon_btn:hover {
 width: 50px;
 height: 20px;
 }
-.icon-btn:focus {
+.product__icon_btn:focus {
   transform: scale(1.2);
 }
