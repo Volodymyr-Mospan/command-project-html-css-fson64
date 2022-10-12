@@ -40,6 +40,7 @@
   padding: 5px 10px;
   color: var(--accent-color);
   cursor: pointer;
+    transition: var(--transition-duration-timing-func);
 }
 .btn--made:hover {
   color: var(--hover-color);
@@ -139,6 +140,7 @@
     fill: #fcfcfc;
     width: 40px;
     height: 20px;
+    transition: var(--transition-duration-timing-func);
   }
     .plate__svg:hover{
       width: 50px;
