@@ -1,46 +1,58 @@
+.container--customer {
+  padding-bottom: 419px;
+
+  @media screen and(min-width:768px) {
+    padding-bottom: 428px;
+  }
+
+  @media screen and(min-width:1200px) {
+    padding-bottom: 240px;
+  }
+}
+
 .customer-review {
   background-color: #f5f5f5;
 
   @media screen and (max-width: 767px) {
     padding-top: 186px;
 
-    background-image: url(../images/customer/mobile/frame-480.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+    // background-image: url(../images/customer/mobile/frame-480.jpg);
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // max-width: 1600px;
+    // margin-left: auto;
+    // margin-right: auto;
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-      background-image: url(../images/customer/mobile/frame-480@2x.jpg);
-    }
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    //   background-image: url(../images/customer/mobile/frame-480@2x.jpg);
+    // }
   }
 
   @media screen and(max-width: 1199px) {
     padding-top: 223px;
 
-    background-image: url(../images/customer/tablet/frame-768.jpg);
-    height: 1228px;
+    // background-image: url(../images/customer/tablet/frame-768.jpg);
+    // height: 1228px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customer/tablet/frame-768@2x.jpg);
-    }
+    // @media (min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //   background-image: url(../images/customer/tablet/frame-768@2x.jpg);
+    // }
   }
 
   @media screen and(min-width: 1200px) {
     padding-top: 456px;
 
-    background-image: url(../images/customer/desctop/frame-1x.jpg);
-    height: 1118px;
+    // background-image: url(../images/customer/desctop/frame-1x.jpg);
+    // height: 1118px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customer/desctop/frame-2x.jpg);
-    }
+    // @media (min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //   background-image: url(../images/customer/desctop/frame-2x.jpg);
+    // }
   }
 }
 
