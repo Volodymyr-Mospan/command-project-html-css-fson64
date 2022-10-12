@@ -4,8 +4,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #f5f5f5;
-  z-index: -100;
+  background-color: #84a1789d;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -99,25 +98,46 @@
   padding-top: 96px;
   padding-bottom: 20px;
   cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-  }
 }
 .buy-now-modal__radio--icecream {
   border: 2px solid #96af8c;
   border-radius: 16px;
+  .buy-now-modal__radio--classik:checked + & {
+    background-color: #96af8c;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #96af8c;
+  }
 }
 .buy-now-modal__radio--icecofee {
   border: 2px solid #efd478;
   background-color: transparent;
   border-radius: 16px;
+
+  .buy-now-modal__radio--classik:checked + & {
+    background-color: #efd478;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #efd478;
+  }
 }
 .buy-now-modal__radio--milkshake {
   border: 2px solid #d6936d;
   background-color: transparent;
   border-radius: 16px;
+
+  .buy-now-modal__radio--classik:checked + & {
+    background-color: #d6936d;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #d6936d;
+  }
 }
 .buy-now-modal__img {
   position: absolute;
@@ -166,14 +186,24 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.4;
+  &:required:invalid:not(:placeholder-shown) {
+    background-color: tomato;
+  }
+  &:required:valid:not(:placeholder-shown) {
+    background-color: #84a178;
+  }
 }
 .comment__txt {
   margin-bottom: 25px;
   height: 65px;
   resize: none;
 }
-.btn.modal-btn:hover,
-.btn.modal-btn:focus {
+.modal-btn-block {
+  display: flex;
+  justify-content: center;
+}
+.modal-btn:hover,
+.modal-btn:focus {
   background-color: var(--hover-color);
   color: var(--light-text-color);
 }
@@ -265,6 +295,11 @@
   margin-bottom: 24px;
 }
 
+// @media screen and (max-width: 479px) {
+//   .modal {
+//     width: 100%;
+//   }
+// }
 @media screen and (min-width: 768px) {
   .modal {
     width: 568px;
