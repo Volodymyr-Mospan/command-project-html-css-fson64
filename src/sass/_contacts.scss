@@ -85,9 +85,11 @@
     color: var(--accent-secondary-color);
     text-decoration: none;
     margin-top: 8px;
+    transition-property: text-decoration;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus{
-        color: var(--accent-color);
         text-decoration: underline;
       }
   }
@@ -95,9 +97,11 @@
   &--address {
     text-decoration: none;
     line-height: 1.5;
+    transition-property: text-decoration;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        color: var(--accent-color);
         text-decoration: underline;
       }
   }
