@@ -1,15 +1,25 @@
+.section--contact{
+  @media screen and (max-width:1199px) {
+    padding-bottom: 40px;
+  }
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  margin-top: -405px;
+  
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     gap: 16px;
+    margin-top: -364px;
   }
 
   @media screen and (min-width: 1200px) {
     gap: 32px;
+    margin-top: -156px;
   }
 }
 .contacts__item {
@@ -33,51 +43,68 @@
 }
 
 .contacts__label {
+  display: block;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.86;
+  line-height: 1.83;
   text-transform: uppercase;
   text-align: center;
   max-width: fit-content;
   padding-left: 23px;
   padding-right: 23px;
-  color: #131313;
-  background-color: #f8d24e;
+  color: var(--dark-text-color);
+  background-color: var(--accent-color);
   border-radius: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 20.44px;
+  letter-spacing: 0.04em;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
+    line-height: 1.87;
     padding: 0 12px;
     margin-bottom: 32px;
   }
 }
 
 .contacts__text {
+  display: block;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.86;
-  color: #131313;
+  line-height: 1.83;
+  color: var(--dark-text-color);
+  letter-spacing: 0.04em;
   &:nth-child(3) {
     margin-top: 9px;
   }
 
   &--lighter {
-    color: #ababab;
+    color: var(--disabled-color);
   }
 
   &--color {
-    color: #d6936d;
+    color: var(--accent-secondary-color);
     text-decoration: none;
     margin-top: 8px;
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+        text-decoration: underline;
+      }
   }
 
   &--address {
     text-decoration: none;
+    line-height: 1.5;
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        text-decoration: underline;
+      }
   }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
+    line-height: 1.85;
     &:nth-child(3) {
       margin-top: 12px;
     }
@@ -96,12 +123,12 @@
 }
 
 .contacts__box {
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid var(--border-color);
   margin-top: 25px;
   margin-bottom: 25px;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid var(--border-color);
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
@@ -117,17 +144,14 @@
   gap: 16px;
   margin-top: 32px;
   align-items: center;
-  margin-bottom: 39px;
 
   @media screen and (min-width: 768px) {
     margin-top: 60px;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 40px;
   }
 
   @media screen and (min-width: 768px) {
     margin-top: 64px;
-    margin-bottom: 120px;
   }
 }
