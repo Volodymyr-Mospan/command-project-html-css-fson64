@@ -25,12 +25,9 @@
   margin-bottom: 42px;
   display: flex;
   gap: 8px;
+  z-index: 1;
 }
 .link--products{
-  text-decoration: none;
-}
-.hero__link:focus{
-  outline: none;
   text-decoration: none;
 }
 .btn--made {
@@ -61,9 +58,9 @@
 }
 .hero__img {
   position: absolute;
-  left: 43px;
-  bottom: -27px;
-  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -26.5px;
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -90,7 +87,8 @@
   .hero__img {
     position: absolute;
     left: 185px;
-    bottom: -29px;
+    bottom: -28px;
+    transform: none;
   }
   .hero {
     display: flex;
@@ -133,18 +131,22 @@
     align-items: center;
   }
   .plate__btn {
-    padding: 0px;
-    background-color: transparent;
-    border: none;
+    display: inline-block;
     margin-top: 20px;
     cursor: pointer;
   }
-
   .plate__svg {
     fill: #fcfcfc;
     width: 40px;
     height: 20px;
   }
+    .plate__svg:hover{
+      width: 50px;
+      height: 20px;
+    }
+    .plate__svg:focus{
+      transform: scale(1.2);
+    }
   .plate__text {
     margin-top: 20px;
     width: 135px;
