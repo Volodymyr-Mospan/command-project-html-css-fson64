@@ -26,7 +26,11 @@
   display: flex;
   gap: 8px;
 }
-.hero__link {
+.link--products{
+  text-decoration: none;
+}
+.hero__link:focus{
+  outline: none;
   text-decoration: none;
 }
 .btn--made {
@@ -36,7 +40,7 @@
   outline: none;
   border: none;
   text-decoration: underline;
-  padding: 12px 22px;
+  padding: 5px 10px;
   color: var(--accent-color);
   cursor: pointer;
 }
@@ -58,7 +62,7 @@
 .hero__img {
   position: absolute;
   left: 43px;
-  bottom: -26px;
+  bottom: -27px;
   z-index: -1;
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -86,7 +90,7 @@
   .hero__img {
     position: absolute;
     left: 185px;
-    bottom: -26px;
+    bottom: -29px;
   }
   .hero {
     display: flex;
@@ -156,9 +160,13 @@
   .hero__btn {
     align-items: center;
     position: absolute;
+    gap: 4px;
     margin: 0;
     left: 32px;
     top: 100px;
+  }
+  .btn--made{
+    padding: 5px 10px;
   }
   .hero__title {
     font-family: Seymour One;
@@ -241,6 +249,7 @@
   .btn--made {
     font-size: 14px;
     line-height: 17px;
+    padding: 12px 22px;
   }
   .hero__btn {
     top: 170px;
