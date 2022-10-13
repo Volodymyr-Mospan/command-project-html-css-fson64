@@ -1,49 +1,83 @@
-<section>
-    <div class="container hero--conitaner">
-        <div class="hero">
-            <h1 class="hero__title">Ice cream<br>made with<br>passion</h1>
-            <ul class="hero__list">
-                <li class="hero__item">
-                    <span>16</span>
-                    <p class="hero__text">cafe</p>
-                </li>
-                <li class="hero__item">
-                    <span>23</span>
-                    <p class="hero__text">food trucks</p>
-                </li>
-            </ul>
-        </div>
-       <ul class="hero__btn">
-        <li><a class="btn btn--products link--products" href="#products">Products</a></li>
-        <li><a class="btn btn--made link--products" href="#about">How its made?</a></li>
-       </ul>
-        <div class="plate">
-            <picture>
-                <source srcset="./images/icecream-plate.png 1x, ./images/icecream-plate@2x.png 2x" media="(min-width: 1200px)" />
-                <source srcset="./images/icecream-plate-tablet.png 1x, ./images/icecream-plate-tablet@2x.png 2x" media="(min-width: 768px)" />
-                 <img src="./images/icecream-plate.png" alt="Тарілка морозива">
-            </picture>
-            <div class="plate__text">
-                <p> Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit,
-                    sed do eiusmod tempor
-                    incididunt ut labore et
-                    <div>
-                        <a class="plate__btn" href="#">
-                                <svg class="plate__svg">
-                                    <use href="./images/icon.svg#icon-arrow"></use>
-                                </svg>
-                            </a>
-                    </div>
-            </div>
-        </div>
-        <div class="hero__img">
-            <picture>
-                <source srcset="./images/icecream.png 1x, ./images/icecream@2x.png 2x" media="(min-width: 1200px)" />
-                <source srcset="./images/icecream-tablet.png 1x, ./images/icecream-tablet@2x.png 2x" media="(min-width: 768px)" />
-                <source srcset="./images/icecream-mobile.png 1x, ./images/icecream-mobile@2x.png 2x" media="(max-width: 767px)" />
-                <img class="hero__img" src="./images/icecream.png" alt="Морозиво">
-            </picture>
-        </div>
+<section class="section-hero">
+  <div class="container hero--conitaner">
+    <div class="hero">
+      <h1 class="hero__title">Ice cream<br />made with<br />passion</h1>
+      <ul class="hero__list">
+        <li class="hero__item">
+          <span>16</span>
+          <p class="hero__text">cafe</p>
+        </li>
+        <li class="hero__item">
+          <span>23</span>
+          <p class="hero__text">food trucks</p>
+        </li>
+      </ul>
     </div>
+    <ul class="hero__btn">
+      <li>
+        <a class="btn btn--products link--products" href="#products"
+          >Products</a
+        >
+      </li>
+      <li>
+        <a class="btn btn--made link--products" href="#about">How its made?</a>
+      </li>
+    </ul>
+    <div class="plate">
+      <picture>
+        <source
+          srcset="
+            ./images/icecream-plate.png    1x,
+            ./images/icecream-plate@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/icecream-plate-tablet.png    1x,
+            ./images/icecream-plate-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img src="./images/icecream-plate.png" alt="Тарілка морозива" />
+      </picture>
+      <div class="plate__text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+
+        <div>
+          <a class="plate__btn" href="#">
+            <svg class="plate__svg">
+              <use href="./images/icon.svg#icon-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__img">
+      <picture>
+        <source
+          srcset="./images/icecream.png 1x, ./images/icecream@2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/icecream-tablet.png    1x,
+            ./images/icecream-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/icecream-mobile.png    1x,
+            ./images/icecream-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img class="hero__img" src="./images/icecream.png" alt="Морозиво" />
+      </picture>
+    </div>
+  </div>
 </section>

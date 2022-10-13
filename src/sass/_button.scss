@@ -29,6 +29,9 @@
   column-gap: 5px;
   margin-top: 20px;
 
+  transition: background-color var(--transition-duration-timing-func),
+    color var(--transition-duration-timing-func),
+    stroke var(--transition-duration-timing-func);
   @media screen and (min-width: 768px) {
     margin-top: 48px;
   }
@@ -53,6 +56,9 @@
 .btn--buy-now {
   column-gap: 7px;
 
+  transition: background-color var(--transition-duration-timing-func),
+    color var(--transition-duration-timing-func),
+    stroke var(--transition-duration-timing-func);
   &:hover {
     background-color: var(--hover-color);
   }
@@ -74,6 +80,10 @@
   padding: 12px 34px 12px 38px;
 
   column-gap: 11px;
+
+  transition: background-color var(--transition-duration-timing-func),
+    color var(--transition-duration-timing-func),
+    stroke var(--transition-duration-timing-func);
 
   &:hover {
     background-color: var(--hover-color);
@@ -97,6 +107,9 @@
   border-radius: 8px;
   background-color: transparent;
   border: 2px solid var(--accent-color);
+
+  transition: border-color var(--transition-duration-timing-func),
+    color var(--transition-duration-timing-func);
 
   &:hover {
     border-color: var(--hover-color);
@@ -128,6 +141,10 @@
 
   background-color: transparent;
   border: 2px solid var(--accent-color);
+
+  transition: border-color var(--transition-duration-timing-func),
+    color var(--transition-duration-timing-func),
+    stroke var(--transition-duration-timing-func);
 
   &:hover {
     border-color: var(--hover-color);

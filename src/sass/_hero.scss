@@ -7,6 +7,10 @@
   text-align: left;
   text-transform: uppercase;
 }
+.section-hero {
+  overflow: hidden;
+  padding-top: 50px;
+}
 .hero--conitaner {
   height: 392px;
   position: relative;
@@ -27,7 +31,7 @@
   gap: 8px;
   z-index: 1;
 }
-.link--products{
+.link--products {
   text-decoration: none;
 }
 .btn--made {
@@ -40,6 +44,7 @@
   padding: 5px 10px;
   color: var(--accent-color);
   cursor: pointer;
+  transition: var(--transition-duration-timing-func);
 }
 .btn--made:hover {
   color: var(--hover-color);
@@ -139,14 +144,15 @@
     fill: #fcfcfc;
     width: 40px;
     height: 20px;
+    transition: var(--transition-duration-timing-func);
   }
-    .plate__svg:hover{
-      width: 50px;
-      height: 20px;
-    }
-    .plate__svg:focus{
-      transform: scale(1.2);
-    }
+  .plate__svg:hover {
+    width: 50px;
+    height: 20px;
+  }
+  .plate__svg:focus {
+    transform: scale(1.2);
+  }
   .plate__text {
     margin-top: 20px;
     width: 135px;
@@ -167,7 +173,7 @@
     left: 32px;
     top: 100px;
   }
-  .btn--made{
+  .btn--made {
     padding: 5px 10px;
   }
   .hero__title {
@@ -192,6 +198,7 @@
   .hero__item + .hero__item {
     margin-top: 16px;
   }
+  
   .hero__text {
     margin-top: 4px;
     margin-bottom: 0;
@@ -203,7 +210,10 @@
     text-transform: lowercase;
     color: #fcfcfc;
   }
-}
+    .section-hero {
+      // overflow: hidden;
+      padding-top: 66px;
+}}
 @media screen and (min-width: 1200px) {
   .hero--conitaner {
     height: 590px;
@@ -216,6 +226,10 @@
     .hero--conitaner {
       background-image: url('../images/bubble@2x.png');
     }
+  }
+  .section-hero{
+    // overflow: hidden;
+    padding-top: 82px;
   }
   .hero__title {
     font-size: 38px;
