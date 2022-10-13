@@ -1,141 +1,149 @@
 .customer-review {
-  background-color: #f5f5f5;
+    background-color: #f5f5f5;
 
-  @media screen and (max-width: 767px) {
-    padding-top: 186px;
+    @media screen and (max-width: 767px) {
+        padding-top: 186px;
 
-    background-image: url(../images/customer/mobile/frame-480.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+        background-image: url(../images/customer/mobile/frame-480.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-      background-image: url(../images/customer/mobile/frame-480@2x.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/customer/mobile/frame-480@2x.jpg);
+        }
     }
-  }
 
-  @media screen and(max-width: 1199px) {
-    padding-top: 223px;
+    @media screen and(max-width: 1199px) {
+        padding-top: 223px;
 
-    background-image: url(../images/customer/tablet/frame-768.jpg);
-    height: 1228px;
+        background-image: url(../images/customer/tablet/frame-768.jpg);
+        height: 1228px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customer/tablet/frame-768@2x.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/customer/tablet/frame-768@2x.jpg);
+        }
     }
-  }
 
-  @media screen and(min-width: 1200px) {
-    padding-top: 456px;
+    @media screen and(min-width: 1200px) {
+        padding-top: 456px;
 
-    background-image: url(../images/customer/desctop/frame-1x.jpg);
-    height: 1118px;
+        background-image: url(../images/customer/desctop/frame-1x.jpg);
+        height: 1118px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customer/desctop/frame-2x.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/customer/desctop/frame-2x.jpg);
+        }
     }
-  }
 }
 
 .customer__subtitle {
-  @media screen and (max-width: 767px) {
-    // width: 280px;
-    height: 256.06px;
-    left: 20px;
-    top: 4297.45px;
+    @media screen and (max-width: 767px) {
+        // width: 280px;
+        height: 256.06px;
+        left: 20px;
+        top: 4297.45px;
 
-    background: #84a178;
-    border-radius: 10px;
-    text-align: center;
-    padding-top: 34px;
-    padding-bottom: 34px;
-    padding-left: 39px;
-    padding-right: 39px;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
+        background: #84a178;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 34px;
+        padding-bottom: 34px;
+        padding-left: 39px;
+        padding-right: 39px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 
-  @media screen and(min-width:768px) {
-    width: 705px;
-    height: 138px;
-    left: 32px;
-    top: 2679px;
+    @media screen and(min-width:768px) {
+        width: 705px;
+        height: 138px;
+        left: 32px;
+        top: 2679px;
 
-    background: #84a178;
-    border-radius: 24px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-  }
+        background: #84a178;
+        border-radius: 24px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
 
-  @media screen and(min-width:1200px) {
-    width: 968px;
-    height: 138px;
+    @media screen and(min-width:1200px) {
+        width: 968px;
+        height: 138px;
 
-    background: #84a178;
-    border-radius: 24px;
-    margin-right: 116px;
-    margin-left: 116px;
-    // padding-top: 39px;
-    padding-left: 109px;
-    padding-right: 109px;
-  }
+        background: #84a178;
+        border-radius: 24px;
+        margin-right: 116px;
+        margin-left: 116px;
+        // padding-top: 39px;
+        padding-left: 109px;
+        padding-right: 109px;
+    }
 }
 
 .customer__text {
-  // font-family: 'Montserrat';
-  // font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 186%;
-  margin-top: 32px;
-  text-align: center;
-
-  color: #131313;
-
-  @media screen and(max-width:480px) {
+    // font-family: 'Montserrat';
+    // font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 186%;
-    margin-top: 30px;
+    margin-top: 32px;
+    margin-bottom: 32px;
     text-align: center;
-    margin-right: auto;
 
     color: #131313;
-  }
+
+    @media screen and(max-width:480px) {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 186%;
+        margin-top: 30px;
+        text-align: center;
+        margin-right: auto;
+
+        color: #131313;
+    }
 }
 
 .customer__image__review {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 32px;
-  width: 85px;
-  height: 85px;
-  background: #6e6e6e;
-  border-radius: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+    width: 85px;
+    height: 85px;
+    background: #6e6e6e;
+    border-radius: 50%;
 }
 
-.slick-dots li.slick-active button:before {
-  width: 12px;
-  height: 12px;
-  color: #d9d9d9;
-}
+// .slick-dots li.slick-active button:before {
+//   width: 12px;
+//   height: 12px;
+//   color: #d9d9d9;
+// }
 
-.slick-dots li button:before {
-  width: 12px;
-  height: 12px;
+// .slick-dots li button::before {
+//     display: block;
+//     width: 12px;
+//     height: 12px;
+//     color: #d9d9d9;
 
-  &:hover,
-  &:focus {
-    color: #84a178;
-  }
-}
+
+// }
+
+// .slick-dots li.slick-active button::after {
+//     display: block;
+//     width: 12px;
+//     height: 12px;
+//     color: #84a178;
+// }
