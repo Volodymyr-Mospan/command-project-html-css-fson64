@@ -12,6 +12,10 @@
   position: absolute;
   top: 12px;
   width: 44px;
+
+  @media screen and (min-width: 1200px) {
+    width: 60px;
+  }
 }
 
 .page-header__logo-img {
