@@ -7,6 +7,10 @@
   text-align: left;
   text-transform: uppercase;
 }
+.section-hero {
+  overflow: hidden;
+  padding-top: 50px;
+}
 .hero--conitaner {
   height: 392px;
   position: relative;
@@ -194,6 +198,7 @@
   .hero__item + .hero__item {
     margin-top: 16px;
   }
+  
   .hero__text {
     margin-top: 4px;
     margin-bottom: 0;
@@ -205,7 +210,10 @@
     text-transform: lowercase;
     color: #fcfcfc;
   }
-}
+    .section-hero {
+      // overflow: hidden;
+      padding-top: 66px;
+}}
 @media screen and (min-width: 1200px) {
   .hero--conitaner {
     height: 590px;
@@ -218,6 +226,10 @@
     .hero--conitaner {
       background-image: url('../images/bubble@2x.png');
     }
+  }
+  .section-hero{
+    // overflow: hidden;
+    padding-top: 82px;
   }
   .hero__title {
     font-size: 38px;
