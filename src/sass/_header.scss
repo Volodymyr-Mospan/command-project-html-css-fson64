@@ -1,11 +1,18 @@
 .page-header__container {
-  position: relative;
+  position: absolute;
   z-index: 3;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding-top: 16px;
+  max-width: 100%;
+  left: 16px;
+  right: 16px;
+}
+
+.page-header__menu-container {
+  position: relative;
 }
 
 .page-header__logo-link {
@@ -198,6 +205,7 @@
 
   .page-header__container {
     padding-top: 24px;
+   left: 0;
   }
 
   .mobile-menu__buy--btn {
