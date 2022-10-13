@@ -289,16 +289,16 @@
   margin-top: auto;
   margin-bottom: 20px;
   padding: 0;
-
   cursor: pointer;
-
-  transition: transform var(--transition-duration-timing-func);
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 60px;
   }
 }
 
+.product__icon_btn {
+  transition: background-color var(--transition-duration-timing-func);
+}
 .product__icon_btn:hover {
   width: 50px;
   height: 20px;
