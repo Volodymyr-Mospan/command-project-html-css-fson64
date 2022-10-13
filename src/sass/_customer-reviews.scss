@@ -108,6 +108,7 @@
   font-size: 16px;
   line-height: 186%;
   margin-top: 32px;
+  margin-bottom: 32px;
   text-align: center;
 
   color: #131313;
@@ -135,18 +136,23 @@
   border-radius: 50%;
 }
 
-.slick-dots li.slick-active button:before {
-  width: 12px;
-  height: 12px;
-  color: #d9d9d9;
-}
+// .slick-dots li.slick-active button:before {
+//   width: 12px;
+//   height: 12px;
+//   color: #d9d9d9;
+// }
 
-.slick-dots li button:before {
-  width: 12px;
-  height: 12px;
+// .slick-dots li button::before {
+//     display: block;
+//     width: 12px;
+//     height: 12px;
+//     color: #d9d9d9;
 
-  &:hover,
-  &:focus {
-    color: #84a178;
-  }
-}
+// }
+
+// .slick-dots li.slick-active button::after {
+//     display: block;
+//     width: 12px;
+//     height: 12px;
+//     color: #84a178;
+// }
