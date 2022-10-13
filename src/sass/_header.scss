@@ -1,5 +1,4 @@
 .page-header__container {
-  position: relative;
   z-index: 3;
   display: flex;
   align-items: center;
@@ -175,7 +174,7 @@
 
 // 768PX-1199PX TABLET
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu {
     display: none;
   }
@@ -213,6 +212,19 @@
 // 1200PX +++ DESKTOP
 
 @media screen and (min-width: 1200px) {
+  .page-header__container {
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__logo-link {
+    position: relative;
+    top: 0;
+    width: 60px;
+  }
+  
   .menu__list {
     display: flex;
     gap: 27px;
@@ -221,6 +233,8 @@
   }
 
   .menu__link {
+    padding-top: 40px;
+    padding-bottom: 20px;
     font-family: 'Montserrat';
     line-height: 1.25;
     font-weight: 700;
@@ -235,14 +249,7 @@
       color: var(--accent-color);
     }
   }
-  .page-header__container {
-    padding-top: 40px;
-  }
-
-  .page-header__logo-link {
-    position: absolute;
-    top: 8px;
-  }
+  
 
   .open-mobile-menu-btn {
     display: none;
