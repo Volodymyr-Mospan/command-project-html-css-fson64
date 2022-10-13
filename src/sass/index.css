@@ -298,7 +298,7 @@ img {
   padding-top: 16px;
   max-width: 100%;
   left: 16px;
-  right: 16px;
+  right: 17px;
 }
 
 .page-header__menu-container {
@@ -474,6 +474,7 @@ img {
   .page-header__container {
     padding-top: 24px;
     left: 0;
+    right: inherit;
   }
   .mobile-menu__buy--btn {
     display: none;

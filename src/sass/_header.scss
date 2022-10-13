@@ -8,7 +8,7 @@
   padding-top: 16px;
   max-width: 100%;
   left: 16px;
-  right: 16px;
+  right: 17px;
 }
 
 .page-header__menu-container {
@@ -179,6 +179,10 @@
     display: none;
   }
 
+  .page-header__container {
+    right: 20px;
+  }
+
   .page-header__btn--buy-now {
     display: none;
   }
@@ -206,6 +210,7 @@
   .page-header__container {
     padding-top: 24px;
    left: 0;
+   right: 32px;
   }
 
   .mobile-menu__buy--btn {
