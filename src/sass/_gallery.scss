@@ -21,11 +21,12 @@
   max-height: 130px;
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 8px;
 
   @media screen and (min-width: 768px) {
     max-width: 704px;
     max-height: 327px;
+    border-radius: 24px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -41,7 +42,6 @@
   z-index: 2;
   left: 0;
   transition: all ease 1s;
-  border-radius: 24px;
 }
 
 .slider-line img {
