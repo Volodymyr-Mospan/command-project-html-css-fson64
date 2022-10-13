@@ -290,6 +290,7 @@
   margin-bottom: 20px;
   padding: 0;
   cursor: pointer;
+  transition: background-color var(--transition-duration-timing-func);
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 60px;
